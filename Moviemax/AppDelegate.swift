@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Moviemax
-//
-//  Created by George on 02.04.2023.
-//
-
 import UIKit
 
 @main
