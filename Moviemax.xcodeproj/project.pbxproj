@@ -15,6 +15,7 @@
 		5EC3B73929D9ECAD0037548D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC3B73829D9ECAD0037548D /* Realm */; };
 		5EC3B73B29D9ECAD0037548D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC3B73A29D9ECAD0037548D /* RealmSwift */; };
 		5EC3B74129D9EDB50037548D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3B74029D9EDB50037548D /* Constants.swift */; };
+		5EC3B74429DA69CC0037548D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC3B74329DA69CC0037548D /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC3B73B29D9ECAD0037548D /* RealmSwift in Frameworks */,
+				5EC3B74429DA69CC0037548D /* FirebaseAuth in Frameworks */,
 				5EC3B73929D9ECAD0037548D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +124,7 @@
 			packageProductDependencies = (
 				5EC3B73829D9ECAD0037548D /* Realm */,
 				5EC3B73A29D9ECAD0037548D /* RealmSwift */,
+				5EC3B74329DA69CC0037548D /* FirebaseAuth */,
 			);
 			productName = Moviemax;
 			productReference = 5EC3B72029D9E7AD0037548D /* Moviemax.app */;
@@ -153,6 +156,7 @@
 			mainGroup = 5EC3B71729D9E7AD0037548D;
 			packageReferences = (
 				5EC3B73729D9ECAD0037548D /* XCRemoteSwiftPackageReference "realm-swift" */,
+				5EC3B74229DA69CB0037548D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 5EC3B72129D9E7AD0037548D /* Products */;
 			projectDirPath = "";
@@ -407,6 +411,14 @@
 				kind = branch;
 			};
 		};
+		5EC3B74229DA69CB0037548D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -419,6 +431,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5EC3B73729D9ECAD0037548D /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		5EC3B74329DA69CC0037548D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EC3B74229DA69CB0037548D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
